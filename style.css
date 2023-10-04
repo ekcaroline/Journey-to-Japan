@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+  width: 100%;
+  color: #521151;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #F8DFF2;
+}
+
+button[type="button"] {
+  background-color: #DE76C5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="button"]:hover {
+  background-color: #C279B4;
+}
+
+iframe {
+  padding: 20px;
+  }
+
+.helpful-links {
+  color: #CF54CD;
+  text-decoration: none;
+}
+
+.helpful-links:hover {
+  text-decoration: underline;
+}
+
+.helpful-links:visited {
+  color: #D1537E;
+}
+
+.text-box {
+  border: 1px solid #000; 
+  padding: 20px; 
+  width: 700px; 
+  background-color: #F4D5F5;
+}
+.text-box-for-small {
+  width: 500px;
+  padding: 20px;
+  background-color: #F4D5F5;
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 18px;
+}
+
+#bulletpoints {
+  font-style: italic;
+  border: 1px solid #000; 
+  padding: 20px; 
+  width: 700px; 
+  background-color: #F4D5F5;
+}
+
+#likeButton {
+  background-color: #DE76C5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

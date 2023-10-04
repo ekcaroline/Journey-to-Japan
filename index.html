@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+
+<html lang="en">
+
+<head>
+<link rel="icon" href="/img/japanicon.jpg">
+  <title>Journey to Japan</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+</head>
+
+<body>
+
+  <!--- Headings --->
+  <img />
+  <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
+  <h1>Activism Project: The Ultimate Digital Planning Guide to Japan</h1>
+  <h3>Not sure where to start? Take a look at this video! </h3>
+
+  <!---Video--->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/IuTDuvYr7f0?si=05O9nRR8-YDQ5xA4"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+  <br>
+
+  <a href="japanitinerary.html">
+    <button type="button">Take me to the Itinerary!</button>
+  </a>
+  <p>Total Likes: <span id="likeCount">0</span></p>
+    <button id= "likeButton">Like</button>
+
+    <script>
+        // Get the like button and like count element
+        const likeButton = document.getElementById("likeButton");
+        const likeCount = document.getElementById("likeCount");
+
+        // Initialize the like count from localStorage or default to 0
+        let count = parseInt(localStorage.getItem("likeCount")) || 0;
+        likeCount.textContent = count;
+
+        // Add a click event listener to the like button
+        likeButton.addEventListener("click", function () {
+            // Increment the count
+            count++;
+
+            // Update the like count element
+            likeCount.textContent = count;
+
+            // Save the updated count to localStorage
+            localStorage.setItem("likeCount", count.toString());
+        });
+    </script>
+  <br>
+
+  <!--- About --->
+  <h2>About My Topic</h2>
+    <center>
+  <p class= "text-box"> Planning a trip to Japan can be difficult since there are some challenges that the user will encounter such as
+    language barriers and cultural differences, budgeting, a variety of tourist attractions, buying a plane ticket, and
+    Japan’s complex transportation system. This digital travel guide aims to provide users with the knowledge,
+    resources, and tools they need to have a successful and unforgettable experience during their trip to Japan.
+  </p>
+      </center>
+
+
+  <!--- Data --->
+
+  <h3>Data Points</h3>
+  <img src="img/stress.png" />
+  <h4>Here are various studies and surveys with having and not having a well-planned travel itinerary. </h4>
+  <center>
+  <ul>
+    <li id="bulletpoints"> According to Booking.com, 52% of travelers missed out on local attractions and attractions.
+    </li>
+    <li id="bulletpoints"> According to a survey by Travelzoo, 52% of travelers admitted to overspending on vacations
+      due to a lack of budget planning. </li>
+    <li id="bulletpoints"> A study published in the Journal of Travel Research found that travelers had higher levels of
+      travel stress due to lack of planning.</li>
+    <li id="bulletpoints"> According to a study by Skift, 68% of travelers believe that local experiences are essential
+      to their trips.</li>
+    <li id="bulletpoints"> The U.S. Department of State recommends having a detailed itinerary, including accommodation
+      information and emergency contacts, as part of travel safety planning.</li>
+  </ul>
+  <!--- Impact --->
+  <h2>Impacts of Not Having a Digital Planning Guide </h2>
+  <img src="img/japan2.jpg" height="300" width="400" />
+  <h3>Cultural Immersion Opportunities Lost</h3>
+  <p class="text-box-for-small">Not having a digital planning guide may result in missed opportunities to immerse yourself in the local culture,
+    explore historical sites, and learn about Japan's rich traditions and heritage.</p>
+
+  <img src="img/japan.jpg" height="300" width="400" />
+  <h3>Impact on Memorable Travel Experiences</h3>
+  <p class="text-box-for-small">Insufficient planning can lead to missed chances to create lasting memories, savor unique adventures, and capture
+    unforgettable moments during your trip to Japan.</p>
+
+  <img src="/img/japan3.jpg" height="300" width="400" />
+  <h3>Effects on Traveler Well-Being and Stress Levels</h3>
+  <p class="text-box-for-small">Poorly planned trips can contribute to increased stress levels and negatively impact your overall well-being,
+    making it essential to have a well-structured travel itinerary.</p>
+    </center>
+
+  <!--- News --->
+  <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+  <h2>Recent News</h2>
+    <center>
+  <a class="helpful-links" href="https://www.japan-guide.com/news/alerts.html">
+    <article>
+      <h3>Japan Travel News 2023</h3> 
+      </a>
+      <p class="text-box">This website offers alerts and news updates specifically related to Japan, serving as a valuable resource for travelers and those interested in staying informed about the country. </p>
+    </article>
+
+  <a class="helpful-links" href="serves as an official platform for promoting and providing information about travel to Japan, catering to the U.S. audience with a focus on tourism and travel-related resources.">
+   <article>
+      <h3>JNTO - Official Tourism Guide 2023</h3> 
+      </a>
+      <p class="text-box">This website serves as an official platform for promoting and providing information about travel to Japan, catering to the U.S. audience with a focus on tourism and travel-related resources. </p>
+    </article>
+      </center>
+  
+
+
+</body>
+
+</html>
