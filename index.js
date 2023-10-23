@@ -1,11 +1,35 @@
+// Get the like button and like count element
+const likeButton = document.getElementById("likeButton");
+const likeCount = document.getElementById("likeCount");
+
+// Initialize the like count from localStorage or default to 0
+let count = parseInt(localStorage.getItem("likeCount")) || 0;
+likeCount.textContent = count;
+
+// Add a click event listener to the like button
+likeButton.addEventListener("click", function () {
+    // Increment the count
+    count++;
+
+    // Update the like count element
+    likeCount.textContent = count;
+
+    // Save the updated count to localStorage
+    localStorage.setItem("likeCount", count.toString());
+});
+
+//Query for button with an id "theme-button"
 const themeButton = document.getElementById("theme-button");
 
+//toggleDarkMode function
 const toggleDarkMode = () => {
 
   document.body.classList.toggle('dark-mode');
 
 
 }
+
+//Register a 'click' event listener for the theme button
 themeButton.addEventListener('click', toggleDarkMode);
 
 count = 3;
