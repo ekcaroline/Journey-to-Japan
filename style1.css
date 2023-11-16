@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8DFF2;
+    color: white;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DE76C5;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+    /* or any other margin you prefer */
+  }
+  
+  .navbar ul li a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    font-weight: bold;
+    color: #89DDEC;
+  }
+  
+  
+  /* CSS rule for the revealable class */
+  .revealable {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  /* CSS rule for the active class */
+  .active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .jr-pass-container,
+  .japanese-phrases-container,
+  .currency-exchange-container,
+  .travel-tips-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #BDF6DE;
+    border-radius: 8px;
+    background-color: #DE9BC9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .anime-pop-culture-container {
+    flex: 0 0 48%;
+    max-width: 40%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #BDF6DE;
+    border-radius: 8px;
+    background-color: #DE9BC9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .img-container {
+    flex: 0 0 48%;
+    max-width: 40%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #BDF6DE;
+    border-radius: 8px;
+    background-color: #DE9BC9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dark-mode {
+    background-color: #523479;
+    color: #0D084B;
+  }
+  
+  #theme-button {
+    background-color: #7A0F4B;
+    color: #fff;
+    padding: 10px 10px;
+    border: 2px solid #7A0F4B;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  #theme-button:hover {
+    background-color: #B515AF;
+  }
+  
+  .header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #C875AE;
+    text-align: center;
+    margin-top: 100px;
+  
+  }
+  
+  #container-img {
+    padding: 10px 10px;
+    max-width: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  
+  .jp-button {
+    background-color: #DE76C5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .jp-button:hover {
+    background-color: #B515AF;
+  }
+  
+  .reg-link {
+    color: slateblue;
+    /* Set the link color */
+    text-decoration: none;
+    /* Remove underlines from links */
+    transition: color 0.3s;
+    /* Add a smooth color transition */
+  }
+  
+  /* Style for hovered links */
+  .reg-link:hover {
+    color: lightyellow;
+    /* Change the link color on hover */
+  }
