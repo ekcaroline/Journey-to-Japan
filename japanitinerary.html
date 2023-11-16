@@ -1,22 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="icon" href="/img/japanicon.jpg">
+  <title>Japan Tourism Guide</title>
 </head>
 
 <body>
-  <section>
-    <img src="img/bg.png" id= "background-image">
-    <img src="img/bird.png" id="bird-image">
-    <img src="img/foliage.png" id="foliage-image">
-    <img src="img/forest.png" id="forest-image">
-  <h2>Nature's Hideout</h2>
-    </section>
-  <script src="script.js"></script>
+  <div class="container">
+    <div class="navbar">
+      <ul>
+        <li><a href="#jr-pass-container">JR Pass Info</a></li>
+        <li><a href="#japanese-phrases-container">Japanese Phrases</a></li>
+        <li><a href="#currency-exchange-container">Currency Exchange</a></li>
+        <li><a href="#travel-tips-container">Travel Tips</a></li>
+        <li><a href="#anime-pop-culture-container">Anime and Pop Culture</a></li>
+        <button id="theme-button">Toggle Dark Mode</button>
+      </ul>
+    </div>
+
+    <div class="header">
+      <h1> 💮 Welcome to the Travel Guide! 💮</h1>
+    </div>
+  </div>
+
+  <div id="jr-pass-container" class="jr-pass-container revealable">
+    <h2>Where to Get JR Passes and Important Cards</h2>
+    <p>If you are looking for JR Passes or other important travel cards, you can visit travel agencies or designated
+      JR
+      Pass exchange offices in major Japanese cities. Some options include:</p>
+    <ul>
+      <li>Travel agencies in your home country before arriving in Japan</li>
+      <li>JR Pass exchange offices at major airports</li>
+      <li>Designated JR Pass exchange counters in cities like Tokyo, Osaka, and Kyoto</li>
+    </ul>
+
+    <div class="container">
+      <img id="container-img" src="/img/busyjp.gif" alt="Japan Image">
+    </div>
+
+  </div>
+
+  <div id="japanese-phrases-container" class="japanese-phrases-container revealable">
+    <h2>Basic Japanese Phrases</h2>
+    <ul>
+      <li><strong>Konnichiwa (こんにちは):</strong> Hello / Good afternoon</li>
+      <li><strong>Arigatou gozaimasu (ありがとうございます):</strong> Thank you</li>
+      <li><strong>Sumimasen (すみません):</strong> Excuse me / I'm sorry</li>
+      <li><strong>Ohayou gozaimasu (おはようございます):</strong> Good morning</li>
+      <li><strong>Ogenki desu ka? (お元気ですか？):</strong> How are you?</li>
+    </ul>
+
+    <div class="container">
+      <img id="container-img" src="/img/greetings.gif" alt="Japan Image">
+    </div>
+
+
+  </div>
+
+  <div id="currency-exchange-container" class="currency-exchange-container revealable">
+    <h2>Japanese Currency Exchange</h2>
+    <p><strong>Japanese Yen (JPY):</strong> ¥</p>
+    <p><strong>Exchange Rate:</strong> 1 USD = 110 JPY</p>
+
+    <div class="container">
+      <img id="container-img" src="/img/jpmoney.jpg" alt="Japan Image">
+    </div>
+  </div>
+
+
+
+  <div id="travel-tips-container" class="travel-tips-container revealable">
+    <h2>Japan Travel Tips</h2>
+    <ul>
+      <li>Respect local customs and traditions.</li>
+      <li>Learn a few basic Japanese phrases for polite communication.</li>
+      <li>Try traditional Japanese cuisine, including sushi, ramen, and tempura.</li>
+      <li>Use public transportation for efficient travel.</li>
+      <li>Explore historical sites and beautiful temples.</li>
+    </ul>
+
+    <body>
+      <p>
+        Would you like to check out my personal itinerary? Click here!
+      </p>
+    </body>
+    <a class="jp-button"
+      href="https://docs.google.com/spreadsheets/d/11urPGoETIEkDR6aDO3Jg7UbcZzMAcNjIaZXvyCQ8-sc/edit?usp=sharing">Japan
+      Itinerary</a>
+
+    <div class="container">
+      <img id="container-img" src="/img/latejapan.jpg" alt="Japan Image">
+    </div>
+  </div>
+
+<div class="container-wrapper">
+  <div id="anime-pop-culture-container" class="anime-pop-culture-container revealable">
+    <h2>Anime and Pop Culture in Japan</h2>
+    <p>Discover the vibrant world of Japanese anime and pop culture, influencing enthusiasts worldwide. Dive into the
+      following aspects:</p>
+
+    <h3>Anime Recommendations:</h3>
+    <ol>
+      <li>"My Hero Academia" (Boku no Hero Academia)</li>
+      <li>"Attack on Titan" (Shingeki no Kyojin)</li>
+      <li>"Spirited Away" (Sen to Chihiro no Kamikakushi)</li>
+    </ol>
+
+    <h3>Manga Recommendations:</h3>
+    <ol>
+      <li>"One Piece"</li>
+      <li>"Death Note"</li>
+      <li>"Naruto"</li>
+    </ol>
+
+    <h3>J-Pop and J-Rock Recommendations:</h3>
+    <ol>
+      <li>Arashi</li>
+      <li>Hikaru Utada</li>
+      <li>ONE OK ROCK</li>
+    </ol>
+
+    <h3>Cosplay and Events:</h3>
+    <p>Explore events like Comic Market (Comiket) and the World Cosplay Summit. Discover Harajuku's unique street
+      fashion.</p>
+
+    <h3>Gaming Recommendations:</h3>
+    <ol>
+      <li>"Final Fantasy" Series</li>
+      <li>"Super Mario Bros." Series</li>
+      <li>"Monster Hunter" Series</li>
+    </ol>
+    
+    <h3>For additional information for each section, follow these links!</h2>
+    <ol>
+      <li><a class="reg-link"
+          href="https://myanimelist.net/">MyAnimeList</a></li>
+      <li><a class="reg-link"
+          href="https://open.spotify.com/album/1tva8hwkAnJp3x0yr8SIto?si=8689e3aa6a1f4c07">JPOP on Spotify</a></li>
+      <li><a class="reg-link"
+          href="https://en.wikipedia.org/wiki/Comiket">Comiket</a></li>
+      <li><a class="reg-link"
+          href="https://store.steampowered.com/">Steam Games</a
+    </ol>
+  </div>
+
+  <div class="img-container">
+    
+  </div>
+</div>
+
+  <script src="jpit.js"></script>
 </body>
 
 </html>
